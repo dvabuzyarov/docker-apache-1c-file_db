@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <point xmlns="http://v8.1c.ru/8.2/virtual-resource-system"
-		xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		base="/BuhBase"
-		ib="Srvr=Serv1C;Ref=BuhBase"
-		enableStandardOData="true">
-	<ws publishExtensionsByDefault="true" />
-	<httpServices publishByDefault="true" publishExtensionsByDefault="true"/>
+                xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                base="/retail"
+                ib="File=/inside/container/InfoBase/;">
+        <ws enable="false"/>
+        <standardOdata enable="false"
+                        reuseSessions="autouse"
+                        sessionMaxAge="20"
+                        poolSize="10"
+                        poolTimeout="5"/>
 </point>
